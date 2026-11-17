@@ -1,0 +1,73 @@
+/*Estilização Geral */
+body{
+    background-color: rgb(245, 237, 251);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: rgb(27, 18, 35);
+}
+.table-container{
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgb(197, 150, 238);
+    border-radius: 8px;
+}
+/*Titulo*/
+.table-header{
+    background-color: dimgrey;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*titulo da tabela8*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+th, td{
+    padding: 15px 20px;
+    border-bottom: solid black;
+}
+/*Cabeçalho da tabela*/
+thead th{
+    background-color: rgb(177, 129, 222);
+    color: aliceblue;
+    text-transform: uppercase ;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/*Linha Zebrada*/
+tbody tr:nth-child(even){
+    background-color: rgb(212, 183, 234);
+}
+tbody tr:hover {
+    background-color: azure;
+}
+/*Barra de status*/
+.status{
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+.status.em-estoque{
+    background-color: azure;
+    color: rgb(20, 241, 83);
+}
+.status.esgotado{
+    background-color: azure;
+    color: red;
+}
+.status.baixo-estoque{
+    background-color: azure;
+    color: rgb(246, 246, 23);
+}
+
+.price{
+    font-weight: 600;
+    color: rgb(117, 9, 185);
+}
